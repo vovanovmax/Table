@@ -1,0 +1,65 @@
+        :root{
+            --primary-text-color: #757575;
+            --title-text-color: #212121;
+            --accent-color: #2196F3;
+            --primari-black-color:#000000;
+            --primari-white-color: #ffffff;
+            --primari-table-color:#00f1f9;
+            --secondary-table-color:#f90057;
+            /* --secondary-white-color:rgba(255, 255, 255, 0.6);
+            --secondary-background-color: #F5F4FA;
+            --footer-background-color:#2F303A; */
+        }
+        body {
+            font-family: 'Montserrat', sans-serif; 
+            background-color:var(--primari-white-color);
+            padding: 50px;
+            
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            width: 100%;
+            max-width: 900px;
+            border-collapse: collapse; 
+            border: 3px solid var(--primari-table-color); 
+            box-shadow: 0 10px 20px var(--accent-color);
+        }
+
+        th {
+            background-color: var(--primari-table-color); 
+            color: var(--primari-white-color);
+            font-family: 'Permanent Marker', cursive;
+            font-size: 1.5rem;
+            padding: 20px;
+            text-align: center;
+            border-right: 2px solid var(--primari-table-color); 
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px var(--primari-black-color); 
+        }
+
+        th:last-child {
+            border-right: none;
+        }
+
+        td {
+            padding: 20px;
+            text-align: center;
+            color: var(--primari-black-color);
+            font-size: 1.1rem;
+        }
+
+
+        tbody tr:nth-child(odd) {
+            background-color: var(--secondary-table-color); 
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: var(--primari-table-color); 
+        }
+        
+        tbody tr:hover {
+            filter: brightness(0.5);
+            transition: all 3s ease;
+        }
