@@ -39,10 +39,7 @@
             text-shadow: 2px 2px 4px var(--primari-black-color); 
         }
 
-        th:last-child {
-            border-right: none;
-        }
-
+        
         td {
             padding: 20px;
             text-align: center;
